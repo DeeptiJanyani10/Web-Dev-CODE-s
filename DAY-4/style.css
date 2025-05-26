@@ -1,0 +1,45 @@
+body{
+	background-color: #cea1a1;
+}
+
+.main{
+	width: 1000px;
+	/* height: 800px; */
+	margin: auto;
+	
+}
+
+.outer{
+	width: 998px;
+	height: 700px;
+/*	border: 1px solid black;*/
+	display: flex;
+	flex-wrap:wrap ;
+	padding-left:10px ;
+	padding-top: 5px;
+}
+
+.box{
+	width: 312px;
+	height: 300px;
+/*	border: 1px solid black;*/
+	text-align: center;
+	background-color: white;
+/*	padding: 10px 10px ;*/
+	margin: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+h3{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+
+
+h1{
+	text-align: center;
+}
