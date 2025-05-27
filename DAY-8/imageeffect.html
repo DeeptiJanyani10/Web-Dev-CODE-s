@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Effect</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .items {
+            flex-basis: 31%;
+            margin: 1%;
+            position: relative;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            padding: 15px;
+            box-sizing: border-box;
+            transition: 2s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .items:hover .content {
+            opacity: 1;
+        }
+
+        .content button {
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+
+        .items img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLXHRg7pl-HZybhyIxyeTma8nQWqb18Z10YA&s" />
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlr2RZL6fS1WMOQgdcn52f52PSOt7giJXGfA&s" />
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://cdn.pixabay.com/photo/2017/05/24/12/07/ppt-backgrounds-2340388_640.jpg" />
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="data:image/jpeg;base64,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" />
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+        <div class="items">
+            <img  src="https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?semt=ais_hybrid&w=740" />
+            <div class="content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuaC7zpSZUOBL6O_x54yN4rLhlFw3LUxQV1g&s" />
+            <div class="content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>F
+</html>
